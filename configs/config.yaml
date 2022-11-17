@@ -1,0 +1,24 @@
+service:
+    name: OCR_VISA
+    port: 1411
+    max_width: 2048
+
+object_detection:
+    device: cuda:0
+
+text_line_detection:
+    device: cuda:0
+
+text_line_recongnition:
+    config: './configs/text_line_recognition/config_vietocr_vgg_s2s.yml'
+    weight_path: '/storage/cv_hcm/huyvt/ocr/vietocr/weights/vietocr_s2s_visa_v1.pth'
+    batch_size: 32
+    use_onnx: False
+    device: cuda:0
+
+kie:
+    device: cuda:0
+
+postprocess:
+
+    

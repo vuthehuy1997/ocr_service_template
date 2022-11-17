@@ -1,0 +1,10 @@
+__pycache__
+*.pth
+*.pt
+support/*
+weights/*
+data/*
+output/*
+saved_images/*
+saved_pred/*
+tmp/*
